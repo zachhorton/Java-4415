@@ -7,7 +7,7 @@ package helloworld;
 
 /**
  *
- * @author u0476829
+ * @author Horton, Zach @ U of U.
  */
 public class HelloWorld {
 
