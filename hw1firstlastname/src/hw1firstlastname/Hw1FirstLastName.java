@@ -66,6 +66,7 @@ public class Hw1FirstLastName {
                 asciiTotal = asciiTotal + name.charAt(i);
                 i = i + 1;
             }
+            // Print out the ASCII total and mean value
             System.out.println("The ASCII Total Value is: " + asciiTotal);
             System.out.println("The ASCII Mean Value is: " + asciiTotal / nameLength);
             // end Task 3
