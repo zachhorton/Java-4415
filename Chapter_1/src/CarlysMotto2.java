@@ -8,6 +8,12 @@ public class CarlysMotto2 {
     }
     static void showMotto(String motto) {
         motto = "* "+motto+" *";
+        String border = borderTopBottom(motto);
+        System.out.println(border);
+        System.out.println(motto);
+        System.out.println(border);
+    }
+    static String borderTopBottom(String motto) {
         Integer mottoLength = motto.length();
         String border = null;
         for (Integer i = 0; i < mottoLength; i++) {
@@ -16,8 +22,6 @@ public class CarlysMotto2 {
             }
             border += "*";
         }
-        System.out.println(border);
-        System.out.println(motto);
-        System.out.println(border);
+        return border;
     }
 }
