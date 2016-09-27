@@ -3,8 +3,8 @@
  */
 public class CarlysMotto2 {
     public static void main(String[] args) {
-        String motto = CarlysMotto.motto();
-        showMotto(motto);
+//        String motto = CarlysMotto.motto();
+        showMotto(CarlysMotto.motto());
     }
     static void showMotto(String motto) {
         motto = "* "+motto+" *";

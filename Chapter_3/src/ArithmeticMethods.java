@@ -1,5 +1,8 @@
 /**
  * Created by zachhorton on 9/26/16.
+ * version 0.1
+ * This class is designed to declare two integers, then submit them to methods that print calculations.
+ * The calculations are +10, +100, and +1000
  */
 public class ArithmeticMethods {
 
@@ -30,4 +33,3 @@ public class ArithmeticMethods {
         System.out.println("The number "+baseNum+" plus 1000 is: "+totalNum);
     }
 }
-

@@ -1,5 +1,8 @@
 /**
  * Created by zachhorton on 9/26/16.
+ * version 0.1
+ * This class is designed to submit two numbers to a method to compute the percentage difference.
+ * The main class will send the two numbers one way, then in the reverse.
  */
 public class Percentages {
 
