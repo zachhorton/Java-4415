@@ -31,13 +31,11 @@ public class Billing {
         price = subTotal - discountAmount - taxAmount;
         return price;
     }
-
     static void ShowTotal(double bill) {
         DecimalFormat df = new DecimalFormat("#.##");
         bill = Double.valueOf(df.format(bill));
         System.out.println("Your total bill is: $" + bill);
     }
-
     static void AskForData() {
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Enter the price per unit. >> ");
@@ -47,7 +45,6 @@ public class Billing {
         System.out.print("Enter the discount, if any. >> ");
         theDiscount = keyboard.nextInt();
     }
-
     static void DisplayTheData() {
         if (thePrice == null || thePrice == 0 || theQuantity == null) {
             return;
