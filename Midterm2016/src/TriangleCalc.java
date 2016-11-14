@@ -26,9 +26,9 @@ public class TriangleCalc {
         System.out.print("Enter the type of measurement (inches, feet, etc.). >> ");
         measurementType = keyboard.nextLine();
         System.out.print("Enter the triangle width. >> ");
-        height = keyboard.nextDouble();
+        height = (Double) keyboard.nextDouble();
         System.out.print("Enter the triangle height. >> ");
-        width = keyboard.nextDouble();
+        width = (Double) keyboard.nextDouble();
     }
 
     // Given height and width, calculate area.

@@ -21,7 +21,7 @@ public class FindEvenOdd {
         }
     }
 
-    static Boolean isEven(Integer num) {
+    static boolean isEven(Integer num) {
         return (num % 2 == 0);
     }
 
