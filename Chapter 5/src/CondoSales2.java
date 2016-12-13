@@ -11,7 +11,6 @@ public class CondoSales2 {
     static String parkingType;
     static int parkingNum;
     static Scanner keyboard = new Scanner(System.in);
-
     public static void main(String[] args) {
         SetCondoType();
         if (condoNum != 0) {
@@ -22,7 +21,6 @@ public class CondoSales2 {
         }
         DisplayCondoInfo();
     }
-
     static void SetCondoType() {
         System.out.print("Enter 1 for Park View, 2 for Golf Course View, or 3 for Lake View. >> ");
         condoNum = keyboard.nextInt();
@@ -45,7 +43,6 @@ public class CondoSales2 {
                 condoPrice = 0;
         }
     }
-
     static void SetParkingType() {
         System.out.print("Enter 1 for a garage, or 2 for a parking spot. >> ");
         parkingNum = keyboard.nextInt();
@@ -62,7 +59,6 @@ public class CondoSales2 {
                 parkingType = "no parking type selected.";
         }
     }
-
     static void DisplayCondoInfo() {
         String message = "The "+condoView+" condo";
         if (parkingNum != 0) {

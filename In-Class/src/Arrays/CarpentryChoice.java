@@ -10,14 +10,14 @@ public class CarpentryChoice {
         items.put("table",250);
         items.put("desk",325);
         items.put("dresser",420);
-        items.put("entertainmen center",600);
+        items.put("entertainment center",600);
 
         String menu = "Enter selection:";
         for (String item : items.keySet()) {
             menu += "\n " + item;
         }
-        String selection = JOptionPane.showInputDialog(null, menu);
-        if (items.containsKey(selection.toLowerCase())) {
+        String selection = JOptionPane.showInputDialog(null, menu).toLowerCase();
+        if (items.containsKey(selection)) {
             JOptionPane.showMessageDialog(null,"The price is $" + items.get(selection));
         } else {
             Boolean foundLikeness = false;

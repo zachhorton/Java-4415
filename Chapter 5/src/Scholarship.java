@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * Created by zachhorton on 10/31/16.
  */
@@ -8,13 +7,11 @@ public class Scholarship {
     static int extraCurricNum;
     static int serviceActNum;
     static boolean qualify;
-
     public static void main(String[] args) {
         GatherInfo();
         qualify = canScholarship();
         DisplayAnswer();
     }
-
     static void GatherInfo() {
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Please enter your highschool GPA. >> ");
@@ -29,7 +26,6 @@ public class Scholarship {
             serviceActNum = keyboard.nextInt();
         }
     }
-
     static boolean gpaError() {
         if (gradePointAvg <= 0 || gradePointAvg > 4.0) {
             return true;
@@ -37,7 +33,6 @@ public class Scholarship {
             return false;
         }
     }
-
     static boolean canScholarship() {
         boolean tmpQualify = false;
         if (gradePointAvg >= 3.8) {
@@ -62,5 +57,4 @@ public class Scholarship {
             System.out.println("Not a candidate.");
         }
     }
-
 }
